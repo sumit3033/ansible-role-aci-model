@@ -1,5 +1,8 @@
 ---
 - name: Ensure tenant customer-xyz exists
+  hosts:  localhost
+  connection: local
+  gather_facts: no
   aci_tenant:
     host: https://apic1.dcloud.cisco.com/
     username: admin
