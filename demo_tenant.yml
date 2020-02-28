@@ -1,0 +1,10 @@
+---
+- name: Ensure tenant customer-xyz exists
+  aci_tenant:
+    host: https://apic1.dcloud.cisco.com/
+    username: admin
+    password: C1sco12345
+
+    tenant: customer-test
+    description: Customer test
+    state: present
